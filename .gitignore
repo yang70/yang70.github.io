@@ -1,0 +1,7 @@
+.DS_Store
+.env
+*.pem
+*.key
+client*.json
+google-creds.json
+credentials/

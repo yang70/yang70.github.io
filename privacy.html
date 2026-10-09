@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Sandy OpenClaw's personal Google integration accesses, uses, stores and shares Google data.">
+  <title>Privacy policy — Sandy OpenClaw</title>
+  <link rel="canonical" href="https://yang70.github.io/privacy.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./">Sandy OpenClaw<span class="brand-dot" aria-hidden="true"></span></a>
+    <nav aria-label="Main navigation"><a href="./">About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main id="main" class="document">
+    <p class="eyebrow">Google integration</p>
+    <h1>Privacy policy</h1>
+    <p class="muted">Effective October 9, 2026</p>
+    <p>This policy describes the personal Sandy OpenClaw deployment maintained by GitHub user <a href="https://github.com/yang70">yang70</a>. It applies to the Google integration and this informational website.</p>
+    <h2>Data accessed</h2>
+    <p>After the owner authorizes Google OAuth access, the integration can read Gmail message content and metadata; Google Drive file listings and metadata; Google Docs text and document information; and Google Sheets spreadsheet information and requested cell ranges. It also uses the authorized account's email identity to select the account.</p>
+    <p>The Google authorization covers readable mailbox data and Drive files accessible to that account, rather than a single file or folder. The helper limits individual searches and excerpts and restricts spreadsheet requests to bounded ranges.</p>
+    <h2>Purpose and limits</h2>
+    <p>Google data is used to answer the owner's questions, summarize relevant information and perform read-only routines specifically requested by the owner. This integration has no permission to send email, create drafts, change labels or read status, or modify or delete Google documents, spreadsheets or files.</p>
+    <p>The deployment operator does not sell Google data, publish it on this site, or use it for advertising or credit decisions. Google data and derived content are subject to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    <h2>AI processing and message delivery</h2>
+    <p>Relevant Google content can be included in requests to the assistant's configured AI providers. At the effective date, OpenAI processes assistant requests and Google Gemini processes conversation summaries. Data handling by these providers depends on their service terms and the owner's account settings; this deployment does not guarantee that provider processing has zero retention or excludes service improvement. The configured free-tier Gemini service may use submitted content to improve Google's products.</p>
+    <p>Replies or routine summaries can be sent through Telegram when the owner chooses that channel. Telegram then handles that message content under its own terms. Google data is not sent to GitHub Pages as part of operating the integration.</p>
+    <h2>Storage and security</h2>
+    <p>OAuth client secrets and refresh tokens are stored in an encrypted file keyring on the owner's private assistant computer, with access restricted to its operating-system account. The keyring's unlock secret is stored separately in a restricted local file. This protects file access but does not prevent a person with full access to that operating-system account from using the credentials.</p>
+    <p>Retrieved excerpts, generated answers and summaries may persist in local assistant conversation history, context-management storage or backups, and in Telegram chats when sent there. Conversation storage is not described as encrypted by this policy. The deployment does not currently enforce an automatic deletion period for all such records.</p>
+    <h2>Revocation and deletion</h2>
+    <p>The owner can revoke future Google access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access does not erase previously stored assistant history, summaries, backups or Telegram messages. Removing those copies requires deleting them from the relevant local storage, backups and message service. Questions about access or deletion should be raised privately with the deployment owner; do not post private content in the public issue tracker.</p>
+    <h2>Website visitors</h2>
+    <p>This static website has no application analytics, tracking scripts, forms, Google sign-in or application cookies. It is hosted by GitHub Pages, which may collect standard service and security information about visits under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Following an external link subjects that visit to the destination's policies.</p>
+    <h2>Changes and contact</h2>
+    <p>This page will be updated if the integration's access or data handling changes. Expanded Google permissions require a new authorization review. General questions can be submitted through the <a href="https://github.com/yang70/yang70.github.io/issues">GitHub issue tracker</a>; sensitive requests should use a private channel with the owner.</p>
+  </main>
+  <footer class="site-footer"><p>Sandy OpenClaw · Personal deployment</p><p><a href="./">About</a> · <a href="terms.html">Terms of use</a></p></footer>
+</body>
+</html>
